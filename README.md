@@ -6,10 +6,9 @@
 mysql管理密码:root/Bsl2018Admin_
 
 装完，mysql命令行执行:
-source .\doc\安装程序\mysql.sql
+source .\安装程序\mysql.sql
 
 2. 安装nodejs, 默认选项即可
-
 
 3. 执行run.bat脚本
 
