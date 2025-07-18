@@ -1,0 +1,104 @@
+﻿
+
+<html>
+<head>
+    <title>打标管理系统</title>
+	
+	<!-- jquery -->
+	<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- 引入bootstrap样式 -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<!-- 引入bootstrap-table样式 -->
+	<link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+
+
+
+	<!-- bootstrap-table.min.js -->
+	<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+	<!-- 引入中文语言包 -->
+	<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
+</head>
+ 
+ <body>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="#"> -->
+                        <!-- <img src="/images/a.jpg" height="100%" /> -->
+                    <!-- </a> -->
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="icon-bar" href="#">打标管理系统</a>
+                        </li>
+                        <!-- <li><a href="#">分类管理</a> -->
+                        <!-- </li> -->
+                        <!-- <li><a href="#">城市管理</a> -->
+                        <!-- </li> -->
+                        <!-- <li><a href="#">商品管理</a> -->
+                        <!-- </li> -->
+                        <!-- <li><a href="#">订单管理</a> -->
+                        <!-- </li> -->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a>欢迎您,<%- user %></a>
+                        </li>
+                        <li><a href="/logout.do">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-home"></span>
+                    </a>
+                    <a href="/userman"  target="mainFrame" class="list-group-item">
+                    <!-- 小图标样式设置 -->
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                    </span>客户管理</a>
+                    <a href="/manman"  target="mainFrame" class="list-group-item">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true">
+                    </span>管理员管理</a>
+                    <a href="/phoneman" target="mainFrame"  class="list-group-item">
+                        <span class="glyphicon glyphicon-camera" aria-hidden="true">
+                    </span>手机型号管理</a>
+                    <a href="/paramman" target="mainFrame"  class="list-group-item">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true">
+                    </span>打标参数管理</a>
+                    <a href="/carveman" target="mainFrame"  class="list-group-item">
+                        <span class="glyphicon glyphicon-minus" aria-hidden="true">
+                    </span>打标记录管理</a>
+                    <a href="/payman" target="mainFrame"  class="list-group-item">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                    </span>支付管理</a>
+                    <a href="/msgman" target="mainFrame"  class="list-group-item">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true">
+                    </span>公告消息管理</a>
+                </div>
+                <!--左边菜单栏-->
+                <div class="col-sm-10">
+				<iframe src="welcome" id="mainFrame" name="mainFrame" frameborder="0" width="100%"  height="75%" frameBorder="0"></iframe>
+                </div>
+            </div>
+        </div>
+          <!-- 底部页脚部分 -->
+ <div class="footer">
+     <p class="text-center">
+         &copy; 2018~2020 
+     </p>
+ </div>
+    </body>
+</html>
+ 
