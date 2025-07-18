@@ -14,4 +14,5 @@ source d:\myapp\doc\安装程序\mysql.sql
 3. 执行run.bat脚本
 
 初始后台首页：http://127.0.0.1:32100/
+
 初始后台管理员帐号: cool/smile
